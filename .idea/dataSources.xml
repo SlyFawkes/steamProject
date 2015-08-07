@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1863557123">
+  <component name="DataSourceManagerImpl" format="xml" hash="3783550303">
     <data-source source="LOCAL" name="Django default" uuid="4b9b4ce5-66c3-4823-95f4-97d1049a49d5">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
@@ -13,6 +13,13 @@
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Users\deanw\PycharmProjects\steamProject\db.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Django default3" uuid="5b03a3db-a6a0-41eb-a606-537604593509">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db.sqlite3</jdbc-url>
       <libraries />
     </data-source>
   </component>
