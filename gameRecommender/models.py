@@ -5,9 +5,15 @@ from django.db import models
 class GameTags(models.Model):
     tags = models.CharField(unique=True, max_length=255)
 
+    def __unicode__(self):
+        return self.tags
+
 
 class GameFeatures (models.Model):
     features = models.CharField(unique=True, max_length=255)
+
+    def __unicode__(self):
+        return self.features
 
 
 class GameInfo(models.Model):
@@ -19,3 +25,6 @@ class GameInfo(models.Model):
     picture = models.URLField()
     gameTags = models.ManyToManyField(GameTags)
     gameFeatures = models.ManyToManyField(GameFeatures)
+
+    def __unicode__(self):
+        return self.game_name
