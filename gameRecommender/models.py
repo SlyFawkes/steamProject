@@ -26,5 +26,8 @@ class GameInfo(models.Model):
     gameTags = models.ManyToManyField(GameTags)
     gameFeatures = models.ManyToManyField(GameFeatures)
 
+    class Meta:
+        ordering = ('app_ID',)
+
     def __unicode__(self):
         return self.game_name
