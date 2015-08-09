@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import GameInfo
 
 
 def index(request):
-    return HttpResponse("Josh is wrong, Dan is right, all hail Dan, also Python > Java")
+    game_list = GameInfo.objects.order_by('app_ID')[:]
+    context = {'game_list': game_list}
+    return render(request, 'gameRecommender/index.html', context)

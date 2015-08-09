@@ -19,7 +19,7 @@ class GameFeatures (models.Model):
 class GameInfo(models.Model):
     game_name = models.CharField(max_length=255)
     app_ID = models.PositiveIntegerField(unique=True)
-    metascore = models.PositiveIntegerField()
+    metascore = models.PositiveIntegerField(null=True, blank=True)
     positive_review_numbers = models.PositiveIntegerField()
     negative_review_numbers = models.PositiveIntegerField()
     picture = models.URLField()
