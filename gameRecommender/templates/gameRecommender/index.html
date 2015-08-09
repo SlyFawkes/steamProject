@@ -1,9 +1,10 @@
-{% if game_list %}
-    <ul>
-    {% for game in game_list %}
-        <li>{{ game.app_ID }} - {{ game.game_name }}</li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No games are available.</p>
-{% endif %}
+{% load render_table from django_tables2 %}
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/django_tables2/themes/paleblue/css/screen.css" />
+    </head>
+    <body>
+        {% render_table game_list %}
+    </body>
+</html>
