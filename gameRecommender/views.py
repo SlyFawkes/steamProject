@@ -1,6 +1,4 @@
 from django.shortcuts import render
-from django.template.context import RequestContext
-from django.http import HttpResponse
 from .models import GameInfo
 
 
