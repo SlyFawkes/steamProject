@@ -6,8 +6,8 @@ from gameRecommender.models import GameInfo
 
 class GameTable(tables.Table):
 
-    game_tags_column = tables.Column(empty_values=(), accessor='gameTags')
-    game_features_column = tables.Column(empty_values=(), accessor='gameFeatures')
+    game_tags_column = tables.Column(empty_values=(), accessor='gameTags', orderable=False)
+    game_features_column = tables.Column(empty_values=(), accessor='gameFeatures', orderable=False)
 
     def render_game_tags_column(self, record):
 
